@@ -22,7 +22,7 @@
           <p class="content"><%= post.content %></p>
           <div class="btn_block">
             <div class="show"><%= link_to 'Show more!', post_path(post.id), class: "link" %></div>
-            <div class="edit"><%= link_to "Edit", edit_post_path(post.id), data: { confirm: 'Are you sure you want to edit this?' }, class: "link" %></div>
+            <div class="edit"><%= link_to "Edit", edit_post_path(post.id), data: { confirm:'Are you sure you want to edit this?'}, class: "link" %></div>
             <div class="delete"><%= link_to 'Delete', post_path(post.id), method: :delete ,data: { confirm: 'Are you sure you want to delete this?'}, class: "link" %></div>
           </div>
         </td>

@@ -1,0 +1,11 @@
+<%= render 'header' %>
+<h3>The following information is to be sent.</h3>
+<div class="post">
+<%= form_with(model: @post, url: posts_path, local: true) do |form| %>
+	<%= form.hidden_field :content %>
+	<p>Content: <%= @post.content %></p>
+	<%= form.submit  "Register", class: "submit" %>
+	<%= form.submit  "Back", name: 'back', class: "submit" %>
+<% end %>
+</div>
+<%= render 'footer' %>

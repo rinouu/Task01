@@ -12,7 +12,7 @@
       <tr>
         <th colspan="4">
           <span><%= image_tag("user_icon.jpg", style: "height:30px;width:30px;") %></span>
-          <span>Posted by you at <%= post.updated_at %></span>
+          <span>Posted by you at <%= post.updated_at.to_date %></span>
           <hr>
         </th>
       </tr>

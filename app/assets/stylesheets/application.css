@@ -1,0 +1,220 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  
+}
+
+header {
+	background-color: #29a1f2;
+	margin: 0;
+	color: white;
+  position: relative;
+}
+header ul {
+	margin: 0;
+	padding: 0;
+	
+}
+header ul .link{
+	color: white;
+  padding: 15px;
+}
+
+.link {
+	text-decoration: none;
+	display: block;
+}
+
+.link_button:hover {
+  background-color: blue;
+}
+
+header li {
+	float: left;
+	width: auto;
+	list-style: none;
+}
+
+header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul .left {
+	float: left;
+}
+
+.right {
+	float: right;
+  margin-right: 5px;
+}
+
+.Text {
+	padding: 15px;
+	margin-top: 25px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 25px;
+}
+
+footer{
+  background-color: #00838f;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  display: table;
+  margin-top: -60px;
+}
+
+footer p {
+  font-size: 0.6rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+section {
+	text-align: center;
+	 overflow: auto;
+   margin-bottom: 60px;
+}
+
+.link_button, .show, .edit, .delete{
+	border-bottom-color: #84ffff;
+    border-left-color: #84ffff;
+    border-right-color: #84ffff;
+    border-top-color: #84ffff;
+	  border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+} 
+.link_button {
+	background-color: rgba(255, 255, 255, 0);
+  margin-top: 25px;
+}
+.show, .edit, .delete {
+	text-decoration: none;
+	padding: 5px;
+}
+
+hr {
+color: #4fc3f7;
+background-color: #4fc3f7;
+}
+table {
+	vertical-align: middle;
+	text-align: left;
+	border: 2px inset #0d47a1;
+	border-radius: 6px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 50%;
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	background-color: #f6f6f6;
+}
+
+.btn_block {
+	display: flex;
+  	justify-content: space-around;
+}
+
+.btn_block > div {
+  background-color: #e1ecf4;
+  text-align: center;
+  width: 80px;
+  margin: 10px;
+  line-height: 20px;
+  font-size: 10px;
+  color: #39739d ;
+}
+
+.post {
+	border: 2px solid blue;
+	border-radius: 6px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	background-color: #f6f6f6;
+}
+
+.text {
+	width: 100%;
+	height: 100px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.text:focus { 
+	border: 1px solid #555;
+}
+
+.submit {
+  width: 25%;
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#flash {
+  background-color: #00c853;
+  border: 1px solid;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#error_explanation  {
+  border: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: red;
+  text-align:center;
+}
+
+#error_explanation li {
+    color:white;
+}
